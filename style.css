@@ -1,5 +1,4 @@
 /* style.css */
-
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #f7f7f7;
@@ -14,14 +13,14 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px; /* Lebar maksimum container */
-    width: 100%; /* Mengisi lebar layar */
+    max-width: 1200px;
+    width: 100%; 
     background-color: #E9EFFB;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    margin-left: auto; /* Menempatkan container di tengah */
-    margin-right: auto; /* Menempatkan container di tengah */
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .column {
@@ -57,10 +56,9 @@ label {
     margin-bottom: 5px;
 }
 
-/* Adjust radio button alignment */
 .radio-group {
     display: flex;
-    align-items: center; /* Vertical alignment */
+    align-items: center; 
 }
 
 .radio-group input[type="radio"] {
@@ -68,71 +66,70 @@ label {
 }
 
 .input-group input[type="number"] {
-    width: 100%; /* Lebar elemen input */
-    padding: 15px; /* Ubah padding untuk elemen input */
+    width: 100%; 
+    padding: 15px; 
     border: 1px solid #a8c0ef;
     border-radius: 5px;
     font-size: 16px;
 }
 
 .button-group {
-    text-align: center; /* Mengatur konten ke tengah */
+    text-align: center; 
 }
 
 .button-group button {
-    width: 40%; /* Ubah lebar tombol */
-    margin: 0 5px; /* Tambahkan margin di antara tombol */
+    width: 40%; 
+    margin: 0 5px; 
     padding: 15px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Transisi saat perubahan warna */
+    transition: background-color 0.3s, color 0.3s; 
 }
 button-group button:hover {
-    background-color: #4367b0; /* Warna latar belakang saat hover */
-    color: #fff; /* Warna teks saat hover */
+    background-color: #4367b0; 
+    color: #fff; 
 }
 #calculateBtn {
-    background-color: #5281df; /* Warna biru */
-    color: #fff; /* Warna teks putih */
+    background-color: #5281df; 
+    color: #fff; 
 }
 
-/* Gaya CSS untuk tombol Reset */
 #resetBtn {
-    background-color: #ac1f4e; /* Warna merah */
-    color: #fff; /* Warna teks putih */
+    background-color: #ac1f4e; 
+    color: #fff; 
 }
 #calculateBtn, #resetBtn {
-    transition: background-color 0.3s, color 0.3s; /* Menambahkan transisi saat perubahan warna */
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 #calculateBtn:hover, #resetBtn:hover {
-    background-color: #4367b0; /* Warna latar belakang saat hover */
-    color: #fff; /* Warna teks saat hover */
+    background-color: #4367b0; 
+    color: #fff; 
 }
 #result {
     padding: 20px;
     border-radius: 5px;
     background-color: #d3dff7;
-    text-align: center; /* Mengatur konten tengah */
+    text-align: center; 
     display: none;
 }
 
 #result h2 {
     font-size: 32px;
-    text-align: left; /* Mengatur judul "Hasil" menjadi rata kiri */
+    text-align: left; 
 }
 
 #result p {
-    text-align: center; /* Mengatur konten tengah */
-    font-size: 25px; /* Mengatur ukuran font untuk paragraf */
+    text-align: center; 
+    font-size: 25px; 
 }
 
 #result button {
     background-color: #5281df;
     color: #fff;
-    padding: 15px 30px; /* Ubah padding tombol */
+    padding: 15px 30px; 
     border: none;
     border-radius: 5px;
     font-size: 15px;
@@ -140,6 +137,6 @@ button-group button:hover {
 }
 
 #result button:first-child {
-    margin-right: 10px; /* Tambahkan margin kanan hanya pada tombol pertama */
+    margin-right: 10px; 
 }
 
