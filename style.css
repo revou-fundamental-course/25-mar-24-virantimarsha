@@ -1,46 +1,58 @@
 /* style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #f7f7f7;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 100%; 
+    flex-direction: column; 
+    align-items: center; 
+    max-width: 80%; 
+    width: 100%;
     background-color: #E9EFFB;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    margin-left: auto; 
-    margin-right: auto; 
+    margin: auto;
 }
 
 .column {
-    width: 45%;
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+#result {
+    width: 100%; 
+    max-width: 600px; 
+    padding: 10px;
 }
 
-.column:first-child {
-    margin-right: 20px;
-}
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
 
+    .column {
+        width: 48%; 
+        margin-bottom: 0; 
+    }
+}
 h1 {
-    text-align: left;
     font-size: 37px;
     color: #333;
+    margin-bottom: 15px;
 }
 
 p {
-    text-align: left;
     font-size: 18px;
     color: #666;
+    margin-bottom: 15px;
 }
 
 .input-group {
@@ -119,10 +131,11 @@ button-group button:hover {
 #result h2 {
     font-size: 32px;
     text-align: left; 
+    margin-bottom: 10px;
 }
 
 #result p {
-    text-align: center; 
+    margin-bottom: 15px;
     font-size: 25px; 
 }
 
@@ -139,4 +152,3 @@ button-group button:hover {
 #result button:first-child {
     margin-right: 10px; 
 }
-
