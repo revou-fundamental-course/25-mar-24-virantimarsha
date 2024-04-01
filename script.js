@@ -1,19 +1,15 @@
 document.getElementById('bmiForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
-
-    // Get form values
+    event.preventDefault(); 
     var gender = document.querySelector('input[name="gender"]:checked').value;
     var weight = parseFloat(document.getElementById('weight').value);
     var age = parseInt(document.getElementById('age').value);
     var height = parseInt(document.getElementById('height').value);
 
-    // Calculate BMI
+    // Kalkulator BMI
     var bmi = calculateBMI(weight, height);
-
-    // Determine BMI category
+    // BMI Kategori
     var bmiCategory = getBMICategory(bmi);
-
-    // Display result
+    // Display Hasil
     displayBMIResult(bmi, bmiCategory);
 });
 
@@ -58,7 +54,7 @@ function displayBMIResult(bmi, bmiCategory) {
         '<button id="downloadBtn">Download Hasil BMI</button>';
     resultElement.style.display = 'block';
 
-    // Tambahkan event listener untuk tombol unduh
+    // untuk tombol unduh
     document.getElementById('downloadBtn').addEventListener('click', function() {
         downloadBMIResult(bmi, bmiCategory);
     });
