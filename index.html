@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <h1>Kalkulator BMI</h1>
+            <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
+            
+            <form id="bmiForm">
+                <div class="input-group">
+                    <label>Jenis Kelamin:</label><br>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Pria</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Wanita</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Berat Badan (kg):</label><br>
+                    <input type="number" id="weight" name="weight" required>
+                </div>
+                <div class="input-group">
+                    <label>Usia (tahun):</label><br>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="input-group">
+                    <label>Tinggi Badan (cm):</label><br>
+                    <input type="number" id="height" name="height" required>
+                </div>
+                <div class="button-group">
+                    <button type="submit" id="calculateBtn">Hitung BMI</button>
+                    <button type="button" id="resetBtn">Reset</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="column">
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
